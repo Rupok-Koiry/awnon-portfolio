@@ -218,7 +218,7 @@ h6 {
   width: 100%;
   height: 100vh;
   /* background: #363c43; */
-  /* background: url("../img/hero-bg.jpg") top left; */
+  background: url("../img/hero-bg.jpg") top left;
   background-size: cover;
 }
 
@@ -281,25 +281,25 @@ h6 {
   }
 }
 
-.matrix {
+.matrix{
   height: max-content;
   width: max-content;
   margin-top: 0 auto;
 }
 
-.matrix p {
+.matrix p{
   font-size: 1px;
   text-orientation: upright;
   writing-mode: vertical-rl;
   display: inline-block;
 }
 
-.matrix p span {
+.matrix p span{
   animation: matrix 1.5s linear infinite;
   opacity: 0;
 }
 
-@keyframes matrix {
+@keyframes matrix{
   0% {
     color: #fff;
     opacity: 1;
@@ -307,7 +307,7 @@ h6 {
 
   5% {
     color: #37b3ed;
-    opacity: 0.15;
+    opacity: .15;
   }
 
   100% {
@@ -414,14 +414,14 @@ section {
   margin: 0 100px 0 100px;
 }
 
-.activities p {
+.activities p{
   color: #040b14;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.activities h2 {
+.activities h2{
   color: #040b14;
   font-size: 32px;
   font-weight: bold;
@@ -437,18 +437,18 @@ section {
   }
 }
 
-.activities .activity {
+.activities .activity{
   padding: 5px 5px;
 }
 
-.activities .item .icon {
+.activities .item .icon{
   font-size: 50px;
   color: #149ddd;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.activities .item .name {
+.activities .item .name{
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 8px;
@@ -456,8 +456,8 @@ section {
   color: inherit;
 }
 
-.activities .item .description {
-  text-align: justify !important;
+.activities .item .description{
+  text-align: justify!important;
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 20px;
