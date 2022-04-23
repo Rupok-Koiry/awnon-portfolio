@@ -406,6 +406,8 @@ section {
 # Activities
 --------------------------------------------------------------*/
 .activities {
+  width: 100%;
+  height: auto;
   max-width: max-content;
   padding: 25px 50px;
   color: #040b14;
@@ -415,10 +417,10 @@ section {
 }
 
 .activities p {
-  color: #040b14;
+  color: #fff;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .activities h2 {
@@ -438,7 +440,12 @@ section {
 }
 
 .activities .activity {
-  padding: 5px 5px;
+  padding: 10px 10px;
+  border: #040b14 1px solid;
+  border-radius: 10px;
+  background-color: #202428;
+  height: 350px;
+  margin-bottom: 20px;
 }
 
 .activities .item .icon {
@@ -461,6 +468,7 @@ section {
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1207,7 +1215,10 @@ span.rating {
 }
 
 .interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: #adb5bd;
+}
+.interests .icon-box h3:hover {
+  color: #040b14;
 }
 /*--------------------------------------------------------------
 # Testimonials
