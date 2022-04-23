@@ -281,25 +281,25 @@ h6 {
   }
 }
 
-.matrix{
+.matrix {
   height: max-content;
   width: max-content;
   margin-top: 0 auto;
 }
 
-.matrix p{
+.matrix p {
   font-size: 1px;
   text-orientation: upright;
   writing-mode: vertical-rl;
   display: inline-block;
 }
 
-.matrix p span{
+.matrix p span {
   animation: matrix 1.5s linear infinite;
   opacity: 0;
 }
 
-@keyframes matrix{
+@keyframes matrix {
   0% {
     color: #fff;
     opacity: 1;
@@ -307,7 +307,7 @@ h6 {
 
   5% {
     color: #37b3ed;
-    opacity: .15;
+    opacity: 0.15;
   }
 
   100% {
@@ -414,14 +414,14 @@ section {
   margin: 0 100px 0 100px;
 }
 
-.activities p{
+.activities p {
   color: #040b14;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.activities h2{
+.activities h2 {
   color: #040b14;
   font-size: 32px;
   font-weight: bold;
@@ -437,18 +437,18 @@ section {
   }
 }
 
-.activities .activity{
+.activities .activity {
   padding: 5px 5px;
 }
 
-.activities .item .icon{
+.activities .item .icon {
   font-size: 50px;
   color: #149ddd;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
-.activities .item .name{
+.activities .item .name {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 8px;
@@ -456,8 +456,8 @@ section {
   color: inherit;
 }
 
-.activities .item .description{
-  text-align: justify!important;
+.activities .item .description {
+  text-align: justify !important;
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -1181,58 +1181,34 @@ span.rating {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-}
-
-.services .icon {
-  float: left;
+.interests .icon-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
+  padding: 20px;
+  background: #202428;
+  transition: all ease-in-out 0.3s;
+  border-radius: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.services .icon i {
-  color: #fff;
+.interests .icon-box i {
   font-size: 44px;
-  line-height: 0;
+  padding-right: 10px;
+  line-height: 1;
 }
 
-.services .icon-box:hover .icon {
-  background: #fff;
-}
-
-.services .icon-box:hover .icon i {
-  color: #149ddd;
-}
-
-.services .title {
-  margin-left: 80px;
+.interests .icon-box h3 {
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+  color: #fff;
 }
 
-.services .title a {
-  color: #149ddd;
+.interests .icon-box:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
-
-.services .title a:hover {
-  color: #149ddd;
-}
-
-.services .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
-}
-
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
@@ -1332,6 +1308,7 @@ span.rating {
   background: #adb5bd;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 10px 10px 0 0;
 }
 
 .contact .info i {
@@ -1404,6 +1381,7 @@ span.rating {
   background: #adb5bd;
   box-shadow: 0 0 24px 0 rgb(0 0 0 / 12%);
   color: black;
+  border-radius: 10px 10px 0 0;
 }
 
 .contact .php-email-form .form-group {

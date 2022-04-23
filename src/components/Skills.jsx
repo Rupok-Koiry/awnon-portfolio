@@ -42,52 +42,52 @@ const Skills = () => {
                 <div className="row">
                   <div className="col-12 text-center">
                     <img
-                      src="/logo/Programming/C.png"
+                      src="/assets/logo/Programming/C.png"
                       className="img-fluid skill_image"
                       alt="C"
                     />
                     <img
-                      src="/logo/Programming/C++.png"
+                      src="/assets/logo/Programming/C++.png"
                       className="img-fluid skill_image"
                       alt="C++"
                     />
                     <img
-                      src="/logo/Programming/python.png"
+                      src="/assets/logo/Programming/python.png"
                       className="img-fluid skill_image"
                       alt="Python"
                     />
                     <img
-                      src="/logo/Programming/Fortran_logo.svg"
+                      src="/assets/logo/Programming/Fortran_logo.svg"
                       className="img-fluid skill_image"
                       alt="Fortran"
                     />
                     <img
-                      src="/logo/Programming/mySql.png"
+                      src="/assets/logo/Programming/mySql.png"
                       className="img-fluid skill_image"
                       alt="MySql"
                     />
                     <img
-                      src="/logo/Programming/MASM.png"
+                      src="/assets/logo/Programming/MASM.png"
                       className="img-fluid skill_image"
                       alt="MASM"
                     />
                     <img
-                      src="/logo/Programming/html5.png"
+                      src="/assets/logo/Programming/html5.png"
                       className="img-fluid skill_image"
                       alt="HTML5"
                     />
                     <img
-                      src="/logo/Programming/CSS3_logo.png"
+                      src="/assets/logo/Programming/CSS3_logo.png"
                       className="img-fluid skill_image"
                       alt="CSS3"
                     />
                     <img
-                      src="/logo/Programming/javascript-39417.png"
+                      src="/assets/logo/Programming/javascript-39417.png"
                       className="img-fluid skill_image"
                       alt="JavaScript"
                     />
                     <img
-                      src="/logo/Programming/bootstrap-logo.svg"
+                      src="/assets/logo/Programming/bootstrap-logo.svg"
                       className="img-fluid skill_image"
                       alt="Bootstrap"
                     />
@@ -100,7 +100,7 @@ const Skills = () => {
                 <div className="row">
                   <div className="col-12 text-center">
                     <img
-                      src="/logo/MathSoft/mathematica.svg"
+                      src="/assets/logo/MathSoft/mathematica.svg"
                       className="img-fluid skill_image"
                       alt="MatheMatica"
                     />
@@ -110,7 +110,7 @@ const Skills = () => {
                       alt="MapleSoft"
                     />
                     <img
-                      src="/logo/MathSoft/Matlab_Logo.png"
+                      src="/assets/logo/MathSoft/Matlab_Logo.png"
                       className="img-fluid skill_image"
                       alt="MatLab"
                     />
@@ -124,7 +124,7 @@ const Skills = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <img
-                    src="/logo/Typesetting/LaTeX_project_logo_bird.svg"
+                    src="/assets/logo/Typesetting/LaTeX_project_logo_bird.svg"
                     className="img-fluid"
                     style={{
                       height: "75px",
@@ -142,17 +142,17 @@ const Skills = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <img
-                    src="/logo/ImSoft/Adobe_Photoshop_CC_icon.svg"
+                    src="/assets/logo/ImSoft/Adobe_Photoshop_CC_icon.svg"
                     className="img-fluid skill_image"
                     alt="Adobe Photoshop"
                   />
                   <img
-                    src="/logo/ImSoft/Gimp.png"
+                    src="/assets/logo/ImSoft/Gimp.png"
                     className="img-fluid skill_image"
                     alt="Gimp"
                   />
                   <img
-                    src="/logo/ImSoft/Inkscape_Logo.svg.png"
+                    src="/assets/logo/ImSoft/Inkscape_Logo.svg.png"
                     className="img-fluid skill_image"
                     alt="InkScape"
                   />
@@ -165,22 +165,22 @@ const Skills = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <img
-                    src="/logo/3D/3ds-max-logo.png"
+                    src="/assets/logo/3D/3ds-max-logo.png"
                     className="img-fluid skill_image"
                     alt="3ds-Max"
                   />
                   <img
-                    src="/logo/3D/mudbox.svg"
+                    src="/assets/logo/3D/mudbox.svg"
                     className="img-fluid skill_image"
                     alt="MudBox"
                   />
                   <img
-                    src="/logo/3D/SketchUp.png"
+                    src="/assets/logo/3D/SketchUp.png"
                     className="img-fluid skill_image"
                     alt="SketchUp"
                   />
                   <img
-                    src="/logo/3D/blender_logo.png"
+                    src="/assets/logo/3D/blender_logo.png"
                     className="img-fluid skill_image"
                     alt="Blender"
                   />
@@ -193,12 +193,12 @@ const Skills = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <img
-                    src="/logo/GUI/tkinter.png"
+                    src="/assets/logo/GUI/tkinter.png"
                     className="img-fluid skill_image"
                     alt="tKinter"
                   />
                   <img
-                    src="/logo/GUI/Qt_logo_2016.svg"
+                    src="/assets/logo/GUI/Qt_logo_2016.svg"
                     className="img-fluid skill_image"
                     alt="Qt"
                   />
