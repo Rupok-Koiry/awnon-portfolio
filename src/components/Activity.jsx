@@ -10,53 +10,32 @@ const Activity = () => {
       </div>
       <div className="activities">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-6 item">
-              <div className="activity">
+          <div className="row g-3">
+            <div className="col-lg-4 col-md-6">
+              <div className="activity ">
                 <div className="icon" align="center">
-                  <i className="bx bx-atom bx-md" style={{ color: "cyan" }}></i>
+                  <i className="bx bx-atom" style={{ color: "cyan" }}></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Research
-                </h3>
+                <h3 className="title">Research</h3>
                 <div className="description">
-                  <div className="description">
-                    I am interested in many different areas of science and
-                    technology, particularly in mathematics and computer
-                    science. I am constantly working on my own projects and
-                    research. My current interests are in secure and hybrid
-                    cryptographic protocols. I am also interested in building
-                    quantum resistant security protocols. I am always looking
-                    for collaboration.
-                  </div>
+                  I am interested in many different areas of science and
+                  technology, particularly in mathematics and computer science.
+                  I am constantly working on my own projects and research. My
+                  current interests are in secure and hybrid cryptographic
+                  protocols. I am also interested in building quantum resistant
+                  security protocols. I am always looking for collaboration.
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6">
               <div className="activity">
                 <div className="icon" align="center">
                   <i
-                    className="bx bx-chalkboard bx-md"
+                    className="bx bx-chalkboard "
                     style={{ color: "yellow" }}
                   ></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Classroom Teaching
-                </h3>
+                <h3 className="title">Classroom Teaching</h3>
                 <div className="description">
                   I have 3 years of classroom teaching experience in
                   mathematics. I plan, prepare and deliver lesson plans and
@@ -67,24 +46,12 @@ const Activity = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6">
               <div className="activity">
                 <div className="icon" align="center">
-                  <i
-                    className="bx bx-chart bx-md"
-                    style={{ color: "green" }}
-                  ></i>
+                  <i className="bx bx-chart" style={{ color: "green" }}></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Tutoring
-                </h3>
+                <h3 className="title">Tutoring</h3>
                 <div className="description">
                   I have 8+ years of experience in tutoring students in
                   mathematics. I have tutored students of all ages. I am able to
@@ -94,24 +61,15 @@ const Activity = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6">
               <div className="activity">
                 <div className="icon" align="center">
                   <i
-                    className="bx bx-code-block bx-md"
+                    className="bx bx-code-block"
                     style={{ color: "orange" }}
                   ></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Coding
-                </h3>
+                <h3 className="title">Coding</h3>
                 <div className="description">
                   I have experience in programming in Python, C++, and numerous
                   other languages that are used in scientific computing
@@ -122,24 +80,15 @@ const Activity = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6">
               <div className="activity">
                 <div className="icon" align="center">
                   <i
-                    className="bx bx-code-alt bx-md"
+                    className="bx bx-code-alt"
                     style={{ color: "blueviolet" }}
                   ></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Web Development
-                </h3>
+                <h3 className="title">Web Development</h3>
                 <div className="description">
                   I am a hobbyist web developer learning new technologies and
                   frameworks. I have some experience in HTML, CSS, and basic
@@ -148,21 +97,12 @@ const Activity = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 item">
+            <div className="col-lg-4 col-md-6">
               <div className="activity">
                 <div className="icon" align="center">
-                  <i className="bx bx-game bx-md" style={{ color: "red" }}></i>
+                  <i className="bx bx-game" style={{ color: "red" }}></i>
                 </div>
-                <h3
-                  className="title"
-                  style={{
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    color: "#fff",
-                  }}
-                >
-                  Gaming
-                </h3>
+                <h3 className="title">Gaming</h3>
                 <div className="description">
                   I am an avid gamer. I have played many different games,
                   ranging from indoor games such as monopoly and chess to

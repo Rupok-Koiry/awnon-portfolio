@@ -405,22 +405,17 @@ section {
 /*--------------------------------------------------------------
 # Activities
 --------------------------------------------------------------*/
-.activities {
-  width: 100%;
-  height: auto;
-  max-width: max-content;
-  padding: 25px 50px;
-  color: #040b14;
+.activities .container {
   background-color: #adb5bd;
   border-radius: 10px 10px 0 0;
-  margin: 0 100px 0 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .activities p {
   color: #fff;
   font-size: 16px;
   line-height: 24px;
-  /* margin-bottom: 20px; */
 }
 
 .activities h2 {
@@ -440,37 +435,36 @@ section {
 }
 
 .activities .activity {
-  padding: 10px 10px;
-  border: #040b14 1px solid;
-  border-radius: 10px;
   background-color: #202428;
-  height: 350px;
-  margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 20px 30px;
+  transition: all ease 0.3s;
+  height: 100%;
 }
 
-.activities .item .icon {
-  font-size: 50px;
-  color: #149ddd;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.activities .activity .icon i {
+  font-size: 60px;
+  transition: all ease 0.3s;
 }
-
-.activities .item .name {
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 8px;
-  margin-top: 0;
+.activities .activity:hover {
+  transform: translateY(-10px);
+}
+.activities .activity:hover .icon i {
+  transform: scale(1.2);
+}
+.activities .activity .title {
+  margin: 16px 0 12px;
+  font-weight: 600;
+  font-size: 24px;
   color: inherit;
+  text-align: center;
 }
 
-.activities .item .description {
-  text-align: justify !important;
+.activities .activity .description {
+  text-align: justify;
   font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 20px;
   color: #fff;
-  padding: 5px 5px;
 }
 
 /*--------------------------------------------------------------
@@ -1219,7 +1213,7 @@ span.rating {
 .interests .icon-box:hover {
   background: #adb5bd;
 }
-.interests .icon-box h3:hover {
+.interests .icon-box:hover h3 {
   color: #040b14;
 }
 /*--------------------------------------------------------------
