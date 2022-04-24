@@ -446,6 +446,7 @@ section {
   background-color: #202428;
   height: 350px;
   margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .activities .item .icon {
@@ -469,6 +470,7 @@ section {
   margin-top: 5px;
   margin-bottom: 20px;
   color: #fff;
+  padding: 5px 5px;
 }
 
 /*--------------------------------------------------------------
