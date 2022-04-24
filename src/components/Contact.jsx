@@ -1,8 +1,46 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [alert, setAlert] = useState({ isShown: false, text: "", style: "" });
+  const {
+    register,
+    handleSubmit,
+    watch,
+    reset,
+    formState: { errors },
+  } = useForm();
+  const form = useRef();
+  const sendEmail = (e) => {
+    emailjs
+      .sendForm(
+        "service_qya75wmm",
+        "template_y9tw89p",
+        form.current,
+        "dkkTW8Ico1sMIdVLs"
+      )
+      .then(
+        (result) => {
+          setAlert({
+            isShown: true,
+            text: "Your Message Sent Successfully!",
+            style: "success",
+          });
+        },
+        (error) => {
+          setAlert({
+            isShown: true,
+            text: " Message Sent Failed!",
+            style: "danger",
+          });
+        }
+      );
+    reset();
+  };
+
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact ">
       <div className="container">
         <div className="section-title">
           <h2>Contact</h2>
@@ -50,39 +88,62 @@ const Contact = () => {
             <form
               id="contact-form"
               className="php-email-form"
-              onsubmit="myFunction()"
+              ref={form}
+              onSubmit={handleSubmit(sendEmail)}
             >
               <div className="row">
                 <div className="form-group col-md-6">
                   <label htmlFor="name">Your Name</label>
-                  <input type="hidden" name="contact_number" />
                   <input
                     type="text"
                     name="user_name"
                     className="form-control"
                     id="name"
-                    required
+                    {...register("user_name", { required: true })}
                   />
+                  {errors.user_name && (
+                    <small className="text-danger">
+                      *This field is required
+                    </small>
+                  )}
                 </div>
                 <div className="form-group col-md-6">
-                  <label htmlFor="name">Your Email</label>
+                  <label htmlFor="email">Your Email</label>
                   <input
                     type="email"
                     className="form-control"
                     name="user_email"
                     id="email"
-                    required
+                    {...register("user_email", {
+                      required: "Email is required",
+                      pattern: {
+                        value:
+                          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                        message: "Please enter a valid email",
+                      },
+                    })}
                   />
+                  {errors.user_email && (
+                    <small className="text-danger">
+                      *{errors.user_email.message}
+                    </small>
+                  )}
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="name">Message</label>
+                <label htmlFor="message">Message</label>
                 <textarea
                   className="form-control"
                   name="message"
+                  id="message"
                   rows="10"
-                  required
+                  {...register("message", { required: true })}
                 ></textarea>
+                {errors.message && (
+                  <small className="text-danger">
+                    *Message field is required
+                  </small>
+                )}
               </div>
               <br />
               <div className="text-center">
@@ -91,7 +152,24 @@ const Contact = () => {
                 </button>
               </div>
               <br />
-              <p id="demo"></p>
+              {alert.isShown ? (
+                <div
+                  className={`alert alert-${alert.style} alert-dismissible fade show text-center`}
+                  role="alert"
+                >
+                  <small> {alert.text}</small>
+                  <button
+                    type="button"
+                    className="close"
+                    data-dismiss="alert"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              ) : (
+                ""
+              )}
             </form>
           </div>
         </div>
@@ -101,3 +179,33 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// import React from "react";
+// import { useForm } from "react-hook-form";
+
+// export default function Contact() {
+//   const {
+//     register,
+//     handleSubmit,
+//     watch,
+//     formState: { errors },
+//   } = useForm();
+//   const onSubmit = (data) => console.log(data);
+
+//   console.log(watch("example")); // watch input value by passing the name of it
+
+//   return (
+//     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
+//     <form onSubmit={handleSubmit(onSubmit)}>
+//       {/* register your input into the hook by invoking the "register" function */}
+//       <input defaultValue="test" {...register("example")} />
+
+//       {/* include validation with required or other standard HTML validation rules */}
+//       <input {...register("exampleRequired", { required: true })} />
+//       {/* errors will return when field validation fails  */}
+//       {errors.exampleRequired && <span>This field is required</span>}
+
+//       <input type="submit" />
+//     </form>
+//   );
+// }

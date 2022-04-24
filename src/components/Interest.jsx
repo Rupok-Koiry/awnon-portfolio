@@ -2,85 +2,54 @@ import React from "react";
 
 const Interest = () => {
   return (
-    <section id="interest" className="services">
+    <section className="interests ">
       <div className="container">
         <div className="section-title">
           <h2>Research Interests</h2>
         </div>
+
         <div className="row">
-          <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div className="icon">
+          <div className="col-lg-4 col-md-6 mt-4 mt-md-0 ">
+            <div className="icon-box">
               <i
                 className="ri-fingerprint-line"
-                style={{ color: "#000000" }}
+                style={{ color: "#ffbb2c" }}
               ></i>
+              <h3>Cryptography</h3>
             </div>
-            <h4 className="title">
-              <span>Cryptography</span>
-            </h4>
           </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div className="icon">
-              <i className="las la-infinity" style={{ color: "#000000" }}></i>
+          <div className="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div className="icon-box">
+              <i className="las la-infinity" style={{ color: "#5578ff" }}></i>
+              <h3>Number Theory</h3>
             </div>
-            <h4 className="title">
-              <span>Number Theory</span>
-            </h4>
           </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="icon">
-              <i className="las la-dragon" style={{ color: "#000000" }}></i>
+          <div className="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div className="icon-box">
+              <i className="las la-dragon" style={{ color: "#e80368" }}></i>
+              <h3>Fractal Geometry</h3>
             </div>
-            <h4 className="title">
-              <span>Fractal Geometry</span>
-            </h4>
           </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div className="icon">
-              <i className="las la-calculator" style={{ color: "#000000" }}></i>
+          <div className="col-lg-4 col-md-6 mt-4 ">
+            <div className="icon-box">
+              <i className="las la-calculator" style={{ color: "#e361ff" }}></i>
+              <h3>Computational Mathematics</h3>
             </div>
-            <h4 className="title">
-              <span>Computational Mathematics</span>
-            </h4>
           </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div className="icon">
+          <div className="col-lg-4 col-md-6 mt-4">
+            <div className="icon-box">
               <i
                 className="las la-project-diagram"
-                style={{ color: "#000000" }}
+                style={{ color: "#18D26E" }}
               ></i>
+              <h3>Mathematical Modeling</h3>
             </div>
-            <h4 className="title">
-              <span>Mathematical Modeling</span>
-            </h4>
           </div>
-          <div
-            className="col-lg-4 col-md-6 icon-box"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div className="icon">
-              <i className="las la-terminal" style={{ color: "#000000" }}></i>
+          <div className="col-lg-4 col-md-6 mt-4">
+            <div className="icon-box">
+              <i className="las la-terminal" style={{ color: "#ffa76e" }}></i>
+              <h3>Algorithm Design and Analysis</h3>
             </div>
-            <h4 className="title">
-              <span>Algorithm Design and Analysis</span>
-            </h4>
           </div>
         </div>
       </div>
