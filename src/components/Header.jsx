@@ -20,6 +20,12 @@ const Header = () => {
                 <a href="https://github.com/awnonbhowmik" className="github">
                   <i className="bi bi-github"></i>
                 </a>
+                <a
+                  href="https://stackexchange.com/users/11038541/awnon-bhowmik"
+                  className="stackexchange"
+                >
+                  <i className="fab fa-stack-exchange"></i>
+                </a>
 
                 <a
                   href="https://www.linkedin.com/in/awnon-bhowmik/"
