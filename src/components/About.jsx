@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="container">
         <div className="section-title">
-          <h2>About</h2>
+          <h2>About </h2>
         </div>
         <div className="row about-row align-items-center">
           <div className="col-lg-4 text-center" data-aos="fade-right">
