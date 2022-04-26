@@ -103,6 +103,7 @@ const Header = () => {
               <li>
                 <a href="#resume" className="nav-link scrollto">
                   <i className="bx bx-file-blank"></i>
+
                   <span>Resume</span>
                 </a>
               </li>
