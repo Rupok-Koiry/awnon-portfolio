@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="hero" id="hero">
       <div className="container">
         <div className="row align-items-center gx-3">
-          <div className="col-md-6 order-md-0 order-1">
+          <div className="col-md-7 order-md-0 order-1">
             <div className="hero_content">
               <h1>
                 Hi I'm <span className="name_char">A</span>wnon{" "}
@@ -31,10 +31,10 @@ const Hero = () => {
               <button className="button-resume">Download Resume</button>
             </div>
           </div>
-          <div className="col-md-6  order-md-1 order-0">
+          <div className="col-md-5  order-md-1 order-0">
             <div className="hero_img">
               <img
-                src="/assets/img/ronaldo_banner.png"
+                src="/assets/img/immersion_class.jpg"
                 alt="Awnon Bhowmik"
                 className="img-fluid rounded w-100"
               />

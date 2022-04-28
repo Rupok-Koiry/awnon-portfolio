@@ -7,7 +7,6 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm();
@@ -15,7 +14,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     emailjs
       .sendForm(
-        "service_qya75wmm",
+        "service_qya75wm",
         "template_y9tw89p",
         form.current,
         "dkkTW8Ico1sMIdVLs"
@@ -103,7 +102,7 @@ const Contact = () => {
                   />
                   {errors.user_name && (
                     <small className="text-danger">
-                      *This field is required
+                      *User name is required
                     </small>
                   )}
                 </div>
@@ -160,12 +159,10 @@ const Contact = () => {
                   <small> {alert.text}</small>
                   <button
                     type="button"
-                    className="close"
-                    data-dismiss="alert"
+                    class="btn-close"
+                    data-bs-dismiss="alert"
                     aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                  ></button>
                 </div>
               ) : (
                 ""
@@ -179,33 +176,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// import React from "react";
-// import { useForm } from "react-hook-form";
-
-// export default function Contact() {
-//   const {
-//     register,
-//     handleSubmit,
-//     watch,
-//     formState: { errors },
-//   } = useForm();
-//   const onSubmit = (data) => console.log(data);
-
-//   console.log(watch("example")); // watch input value by passing the name of it
-
-//   return (
-//     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
-//     <form onSubmit={handleSubmit(onSubmit)}>
-//       {/* register your input into the hook by invoking the "register" function */}
-//       <input defaultValue="test" {...register("example")} />
-
-//       {/* include validation with required or other standard HTML validation rules */}
-//       <input {...register("exampleRequired", { required: true })} />
-//       {/* errors will return when field validation fails  */}
-//       {errors.exampleRequired && <span>This field is required</span>}
-
-//       <input type="submit" />
-//     </form>
-//   );
-// }
