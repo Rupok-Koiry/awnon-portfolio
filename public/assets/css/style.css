@@ -176,12 +176,13 @@ h6 {
 .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
+  text-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.6);
 }
 
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu li:hover > a i {
-  color: #149ddd;
+.nav-menu a:hover img,
+.nav-menu .active img,
+.nav-menu li:hover > a img {
+  filter: drop-shadow(0rem 0rem 0.5rem rgba(231, 235, 14, 0.6));
 }
 
 /* Mobile Navigation */
@@ -213,7 +214,11 @@ h6 {
 .mobile-nav-active #header {
   left: 0;
 }
-
+.sidebar_icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1163,4 +1168,72 @@ span.rating {
   text-shadow: 3px 4px 7px rgba(70, 70, 70, 0.8);
   font-weight: 600 !important;
   color: #040b14 !important;
+}
+
+/* New Button */
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  background: #2eafec;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  height: 45px;
+  padding: 0 30px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.button:hover {
+  color: #fff;
+  background: #258cbd;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, -2px, 0);
+}
+.button:active {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  transform: translate3d(0, 1px, 0);
+}
+
+.pulse {
+  position: relative;
+}
+.pulse:before,
+.pulse:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  margin: auto;
+}
+.pulse:before {
+  animation: pulse 1.5s infinite linear;
+}
+.pulse:after {
+  animation: pulse 2s 0.4s infinite linear;
+}
+.pulse:hover:before,
+.pulse:hover:after {
+  display: none;
 }

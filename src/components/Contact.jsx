@@ -146,9 +146,10 @@ const Contact = () => {
               </div>
               <br />
               <div className="text-center">
-                <button type="submit" value="Send">
+                {/* <button type="submit" value="Send">
                   Send Message
-                </button>
+                </button> */}
+                <button className="btn button pulse">Send Message</button>
               </div>
               <br />
               {alert.isShown ? (

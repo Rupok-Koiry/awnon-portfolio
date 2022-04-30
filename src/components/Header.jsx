@@ -78,44 +78,79 @@ const Header = () => {
             <ul>
               <li>
                 <a href="#hero" className="nav-link scrollto active">
-                  <i className="bx bx-home"></i>
+                  {/* <i className="bx bx-home"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/home.png"
+                    alt="home"
+                    className="sidebar_icon"
+                  />
                   <span>Home</span>
                 </a>
               </li>
               <li>
                 <a href="#about" className="nav-link scrollto">
-                  <i className="bx bx-user"></i>
+                  {/* <i className="bx bx-user"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/about.png"
+                    alt="about"
+                    className="sidebar_icon"
+                  />
                   <span>About</span>
                 </a>
               </li>
               <li>
                 <a href="#Activity" className="nav-link scrollto">
-                  <i className="bx bx-bar-chart-alt"></i>
+                  {/* <i className="bx bx-bar-chart-alt"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/activity.png"
+                    alt="activity"
+                    className="sidebar_icon"
+                  />
                   <span>Activity</span>
                 </a>
               </li>
               <li>
                 <a href="#skills" className="nav-link scrollto">
-                  <i className="fas fa-tools"></i>
+                  {/* <i className="fas fa-tools"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/skills.png"
+                    alt="skill"
+                    className="sidebar_icon"
+                  />
                   <span>Skill</span>
                 </a>
               </li>
               <li>
                 <a href="#resume" className="nav-link scrollto">
-                  <i className="bx bx-file-blank"></i>
+                  {/* <i className="bx bx-file-blank"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/resume.png"
+                    alt="resume"
+                    className="sidebar_icon"
+                  />
 
                   <span>Resume</span>
                 </a>
               </li>
               <li>
                 <a href="#interest" className="nav-link scrollto">
-                  <i className="bx bx-server"></i>
+                  {/* <i className="bx bx-server"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/interest.png"
+                    alt="interest"
+                    className="sidebar_icon"
+                  />
                   <span>Interests</span>
                 </a>
               </li>
               <li>
                 <a href="#contact" className="nav-link scrollto">
-                  <i className="bx bx-envelope"></i>
+                  {/* <i className="bx bx-envelope"></i> */}
+                  <img
+                    src="/assets/img/sidebar-icons/contact.png"
+                    alt="contact"
+                    className="sidebar_icon"
+                  />
                   <span>Contact</span>
                 </a>
               </li>
