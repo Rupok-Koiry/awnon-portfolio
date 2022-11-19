@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="col-md-5  order-md-1 order-0">
             <div className="hero_img">
               <img
-                src="/assets/img/immersion_class.jpg"
+                src="/assets/img/banner.png"
                 alt="Awnon Bhowmik"
                 className="img-fluid rounded w-100"
               />

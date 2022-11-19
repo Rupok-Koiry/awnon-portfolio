@@ -1,4 +1,6 @@
 import React from "react";
+import WhatsAppWidget from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 import About from "./components/About";
 import Activity from "./components/Activity";
 import Contact from "./components/Contact";
@@ -23,6 +25,7 @@ const App = () => {
         <Contact />
         <Footer />
       </main>
+      <WhatsAppWidget phoneNumber="+8801719032457" />
     </>
   );
 };

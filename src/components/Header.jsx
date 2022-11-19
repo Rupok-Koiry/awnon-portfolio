@@ -8,7 +8,7 @@ const Header = () => {
         <div className="d-flex flex-column">
           <div className="profile">
             <img
-              src="/assets/img/profile-img.jpg"
+              src="/assets/img/header.webp"
               alt="Awnon Bhowmik"
               className="img-fluid rounded-circle profile-img"
             />
@@ -18,14 +18,14 @@ const Header = () => {
             <div className="social-links mt-3 text-center">
               <div className="social-links">
                 <a
-                  href="https://github.com/awnonbhowmik"
+                  href="https://github.com/Awnonbhowmik"
                   className="github"
                   style={{ color: "#171515" }}
                 >
                   <img src="/assets/img/icons/github.png" alt="github" />
                 </a>
                 <a
-                  href="https://stackexchange.com/users/11038541/awnon-bhowmik"
+                  href="https://stackexchange.com/users/11038541/Awnon-bhowmik"
                   className="stackexchange"
                   style={{ color: "#1e5397" }}
                 >
@@ -36,19 +36,19 @@ const Header = () => {
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/awnon-bhowmik/"
+                  href="https://www.linkedin.com/in/Awnon-bhowmik/"
                   className="linkedin"
                 >
                   <img src="/assets/img/icons/linkedin.png" alt="linkedin" />
                 </a>
                 <a
-                  href="https://www.quora.com/profile/%E0%A6%85%E0%A6%A8%E0%A6%A8-%E0%A6%AD%E0%A7%8C%E0%A6%AE%E0%A6%BF%E0%A6%95-Awnon-Bhowmik"
+                  href="https://www.quora.com/profile/%E0%A6%85%E0%A6%Adffdd8%E0%A6%A8-%E0%A6%AD%E0%A7%8C%E0%A6%AE%E0%A6%BF%E0%A6%95-Awnon-Bhowmik"
                   className="quora"
                 >
                   <img src="/assets/img/icons/quora.png" alt="quora" />
                 </a>
                 <a
-                  href="https://scholar.google.com/citations?user=nEdZAFkAAAAJ&hl=en"
+                  href="https://scholar.google.com/citations?user=nEdddZAFkAAAAJ&hl=en"
                   className="googlescholar"
                 >
                   <img src="/assets/img/icons/scholar.png" alt="scholar" />
@@ -63,12 +63,12 @@ const Header = () => {
                   />
                 </a>
                 <a
-                  href="https://orcid.org/0000-0001-5858-5417"
+                  href="https://orcid.org/0000-00dffd01-5d858-5417"
                   className="orcid"
                 >
                   <img src="/assets/img/icons/orcid.png" alt="orcid" />
                 </a>
-                <a href="mailto:awnonbhowmik256@gmail.com" className="gmail">
+                <a href="mailto:Awnonbhowmik256@gmail.com" className="gmail">
                   <img src="/assets/img/icons/gmail.png" alt="gmail" />
                 </a>
               </div>
